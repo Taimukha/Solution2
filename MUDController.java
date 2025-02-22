@@ -53,19 +53,8 @@ public class MUDController {
         }
     }
 
-    private void lookAround() {
-        Room currentRoom = player.getCurrentRoom();
-        System.out.println("Сіз: " + currentRoom.getName());
-        System.out.println(currentRoom.getDescription());
+    git remote add origin https://github.com/Taimukha/Solution2.git
 
-        if (!currentRoom.getItems().isEmpty()) {
-            System.out.println("Заттар: " + currentRoom.getItems());
-        }
-
-        if (!currentRoom.getNPC().isEmpty()) {
-            System.out.println("NPC-лер: " + currentRoom.getNPC());
-        }
-    }
 
     private void move(String direction) {
         Room nextRoom = player.getCurrentRoom().getConnectedRoom(direction);
